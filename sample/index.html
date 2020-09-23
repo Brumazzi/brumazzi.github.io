@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <title>Document</title>
+
+
+  <!-- cyan framework -->
+  <link rel="stylesheet" href="../css/input.css">
+  <script src="../js/lotus.js"></script>
+
+</head>
+<body>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="row mb-3">
+          <div class="col-sm-12">
+            <div class="select" data-order="append" id="selects" name="select" type="single">
+              <div class="select-label"></div>
+              <div class="select-item" value="1">Mask 1</div>
+              <div class="select-item" value="2">Mask 2</div>
+              <div class="select-item" value="3">Mask 3</div>
+              <div class="select-item" value="4">Mask 4</div>
+              <div class="select-item" value="5">Mask 5</div>
+              <div class="select-item" value="d1">item 1</div>
+              <div class="select-item" value="d2">item 2</div>
+              <div class="select-item" value="d3">item 3</div>
+              <div class="select-item" value="d4">item 4</div>
+              <div class="select-item" value="d5">item 5</div>
+              <div class="select-item" value="d6">item 6</div>
+              <div class="select-item" value="d7">item 7</div>
+              <div class="select-item" value="d8">item 8</div>
+              <div class="select-item" value="d9">item 9</div>
+              <div class="select-item" value="d10">item 10</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="select" data-order="prepend" id="selectm" name="selectmult" type="mult">
+              <div class="select-label">MULT</div>
+              <div class="select-item" value="1">Mask 1</div>
+              <div class="select-item" value="2">Mask 2</div>
+              <div class="select-item" value="3">Mask 3</div>
+              <div class="select-item" value="4">Mask 4</div>
+              <div class="select-item" value="5">Mask 5</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="input" data-order="prepend" id="pass" type="password" data-min="4" data-max="8" name="entrada">PASSWD</div>
+          </div>
+          <div class="col-sm-12">
+            <div class="input" data-order="prepend" id="date" type="date" name="entrada">DATE</div>
+          </div>
+          <div class="col-sm-12">
+            <div class="input" data-order="prepend" type="number" data-max="8" name="entrada" value='123' data-regex="[0-9.-]">NUMBER</div>
+          </div>
+          <div class="col-sm-12">
+            <div class="input" data-order="append" id="color" type="color" name="entrada">COLOR</div>
+          </div>
+          <div class="col-sm-12">
+            <div class="input" id="file" data-order="prepend" type="file" name="entrada">FILE</div>
+          </div>
+          <div class="col-sm-12">
+            <div class="input" id="file2" data-order="append" type="file" name="entrada">FILE</div>
+          </div>
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm 6">
+                <div class="input" type="radio" name="entrada" value='x'>radio input 1</div>
+              </div>
+              <div class="col-sm 6">
+                <div class="input" type="radio" data-style="" name="entrada" value='y'>radio input 2</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-6">
+                <div id="mycheck" class="input" data-style="fontawesome-ok" type="checkbox" name="marca1" value="1" checked>checkbox input</div>
+              </div>
+              <div class="col-sm-6">
+                <div id="mycheck" class="input" data-style="fontawesome-ok" type="checkbox" name="marca2" value="1" checked>checkbox input</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+header{
+  min-height: 10vh;
+  max-height: 15vh;
+}
+
+main{
+  min-height: 70vh;
+}
+
+footer{
+  min-height: 20vh;
+}
+
+.navbar-nav{
+  min-height: 44px;
+}
+
+.nav-link:hover{
+  /*background-color: rgba(0,0,0,0.2);*/
+  border-bottom: solid 3px #ffc107 !important;
+}

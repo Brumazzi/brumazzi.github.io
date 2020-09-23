@@ -1,0 +1,95 @@
+@import url(https://weloveiconfonts.com/api/?family=fontawesome);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+label[type=checkbox] div, label[type=radio] div{
+  display: inline-block;
+  border-radius: 6px;
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+  border: solid 1px rgba(0,0,0,0.2);
+  overflow: hidden;
+  padding-left: 3px;
+  color: rgba(0,0,0,0);
+}
+
+label[type=checkbox] input, label[type=radio] input{
+  display: none;
+}
+
+label[type=radio] div{
+  border-radius: 100%;
+  padding-left: 5px;
+}
+
+label[type=checkbox] span, label[type=radio] span{
+  position: relative;
+  top: -6px;
+}
+
+label[type=radio].checked div{
+  background-color: rgba(255,255,255,1);
+  color: #007bff;
+}
+
+label[type=checkbox].checked div{
+  background-color: #007bff;
+  color: rgba(255,255,255,1);
+}
+
+input[type="file"]{
+  overflow: hidden;
+}
+
+.select, .select > div{
+  overflow: hidden;
+}
+
+.select-list > label{
+  display: block;
+  padding: 8px;
+  border: solid 1px rgba(0,0,0,0.15);
+  margin: 0px;
+  background-color: white;
+}
+
+.select > .select-label > label:not(.input) > span > .fontawesome-chevron-down{
+  transition: transform 0.5s;
+}
+.select.open > .select-label > label:not(.input) > span > .fontawesome-chevron-down{
+  transform: rotate(180deg);
+  transition: transform 0.5s;
+}
+
+.select:not(.open) > .select-list{
+  display: none;
+}
+
+.select > .select-list{
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  z-index: 10000;
+  max-height: 16rem;
+}
+
+.select > .select-list > label.checked {
+  background-color: #007bff;
+}
+
+.select > .select-list > label > div{
+  display: none;
+}
+.select > .select-list > label > span{
+  position: static;
+  top:0px;
+  left:0px;
+}
+
+.select.open > .select-list{
+  display: block;
+}
